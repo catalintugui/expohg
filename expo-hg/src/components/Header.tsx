@@ -15,25 +15,25 @@ export function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <NavLink to="/" className="header__title" end>
-          <h1>{t.architect.name}</h1>
-          <span>{t.architect.tagline}</span>
-        </NavLink>
-        <div className="header__nav-row">
-          <nav className="nav" aria-label={t.nav.mainAria}>
-            {nav.map(({ to, label, end }) => (
-              <NavLink
-                key={to}
-                to={to}
-                end={end}
-                className={({ isActive }) => (isActive ? 'is-active' : undefined)}
-              >
-                {label}
-              </NavLink>
-            ))}
-          </nav>
+        <div className="header__top">
+          <NavLink to="/" className="header__title" end>
+            <h1>{t.architect.name}</h1>
+            <span>{t.architect.tagline}</span>
+          </NavLink>
           <LanguageSelector />
         </div>
+        <nav className="nav" aria-label={t.nav.mainAria}>
+          {nav.map(({ to, label, end }) => (
+            <NavLink
+              key={to}
+              to={to}
+              end={end}
+              className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+            >
+              {label}
+            </NavLink>
+          ))}
+        </nav>
       </div>
     </header>
   )
