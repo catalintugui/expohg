@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "Elena Voss — Arhitectură",
+    "description": "Elena Voss — arhitectură și practică spațială"
+  },
+  "nav": {
+    "homepage": "Acasă",
+    "exhibition": "Expoziție",
+    "work": "Lucrări",
+    "about": "Despre noi",
+    "mainAria": "Principal",
+    "languageAria": "Limbă"
+  },
+  "lang": {
+    "en": "EN",
+    "ro": "RO"
+  },
+  "architect": {
+    "name": "Elena Voss",
+    "tagline": "Arhitectură & practică spațială",
+    "role": "Arhitect",
+    "location": "Berlin",
+    "year": "Înființat 2018",
+    "email": "studio@elenavoss.de",
+    "bio": [
+      "Practica mea se concentrează pe raportul dintre formă și vid, explorând cum structura minimală poate genera o intensitate spațială discretă. Fiecare proiect este un studiu al proporției, materialului și luminii.",
+      "Lucrările variază de la instalații expoziționale la intervenții urbane, menținând o abordare consistentă: claritate geometrică, detaliu precis, reflecție asupra utilizării.",
+      "Studio-ul funcționează independent din Berlin, colaborând cu ateliere specializate pentru structură, lumină și execuție materială."
+    ]
+  },
+  "exhibition": {
+    "title": "Form und Raum",
+    "dates": "14 sep — 22 nov 2026",
+    "venue": "Kunsthalle Nord",
+    "street": "Loremstraße 14",
+    "city": "10115 Berlin",
+    "admission": "12 € standard · 8 € redus",
+    "statement": [
+      "Expoziția adună studii spațiale și fragmente arhitecturale care interoghează limitele dintre construcție și gol. Fiecare piesă propune o lectură a proporției ca instrument critic, nu decorativ.",
+      "Prin instalații, desene și modele, lucrarea invită la o contemplare lentă a relației dintre corp, lumină și structură — o arhitectură redusă la esența sa geometrică."
+    ]
+  },
+  "projects": [
+    {
+      "slug": "monolith-study-i",
+      "index": "01",
+      "title": "Studiu monolit I",
+      "year": "2024",
+      "type": "Instalație",
+      "desc": "Un studiu al masivității și al luminii filtrate prin deschideri precise, explorând monumentalitatea la scară redusă."
+    },
+    {
+      "slug": "negative-volume",
+      "index": "02",
+      "title": "Volum negativ",
+      "year": "2023",
+      "type": "Pavilion",
+      "desc": "Un pavilion temporar definit de absență — spațiul locuibil este sculptat din gol, nu din masă."
+    },
+    {
+      "slug": "axis-ornament",
+      "index": "03",
+      "title": "Axă & ornament",
+      "year": "2023",
+      "type": "Rezidențial",
+      "desc": "O locuință în care axa structurală devine singurul ornament permis, refuzând orice adaos decorativ."
+    },
+    {
+      "slug": "concrete-cantata",
+      "index": "04",
+      "title": "Cantată în beton",
+      "year": "2022",
+      "type": "Spațiu public",
+      "desc": "O intervenție urbană din beton armat brut, compusă ca o secvență ritmică de platforme și praguri."
+    },
+    {
+      "slug": "light-chamber",
+      "index": "05",
+      "title": "Camera luminii",
+      "year": "2022",
+      "type": "Galerie",
+      "desc": "O galerie fără ferestre convenționale — lumina naturală este modulată prin fante verticale și suprafețe reflectante."
+    },
+    {
+      "slug": "plan-as-poem",
+      "index": "06",
+      "title": "Plan ca poem",
+      "year": "2021",
+      "type": "Cercetare",
+      "desc": "Cercetare despre planul arhitectural ca formă narativă, unde circulația devine vers și camera — strofă."
+    }
+  ],
+  "home": {
+    "studio": {
+      "title": "Studio-ul",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "ethosLabel": "Etosul nostru",
+    "blocks": [
+      {
+        "title": "Detalii personalizate",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero sed cursus ante dapibus diam. Sed nisi nulla quis sem at nibh elementum imperdiet."
+      },
+      {
+        "title": "Calitatea vieții",
+        "text": "Duis sagittis ipsum praesent mauris fusce nec tellus sed augue semper porta. Mauris massa vestibulum lacinia arcu eget nulla class aptent taciti sociosqu ad litora."
+      },
+      {
+        "title": "Meșteșug excepțional",
+        "text": "Curabitur sodales ligula in libero sed dignissim lacinia nunc. Curabitur tortor pellentesque nibh aenean quam in scelerisque sem at augue id condimentum."
+      }
+    ]
+  },
+  "exhibitionPage": {
+    "heading": "Expoziție",
+    "lead": "— o prezentare solo de studii spațiale și fragmente arhitecturale.",
+    "statement": "Manifest",
+    "visit": "Vizită",
+    "hours": "Program",
+    "days": "Mar — Duminică",
+    "time": "11:00 — 19:00",
+    "closedMondays": "Închis lunea",
+    "address": "Adresă",
+    "admission": "Intrare",
+    "tickets": "Bilete",
+    "freeUnder18": "Gratuit sub 18 ani"
+  },
+  "workPage": {
+    "heading": "Lucrări",
+    "projectsCount": "proiecte",
+    "period": "2018 — prezent",
+    "lead": "Un catalog de lucrări construite și speculative care explorează proporția, materialul și pragul dintre închidere și vid.",
+    "projects": "Proiecte",
+    "subtitle": "Arhitectură & instalație"
+  },
+  "aboutPage": {
+    "heading": "Despre noi",
+    "lead": "Un studio independent care lucrează la intersecția arhitecturii, designului expozițional și cercetării spațiale.",
+    "studio": "Studio",
+    "contact": "Contact",
+    "enquiries": "Solicitări",
+    "focus": "Domenii",
+    "practice": "Practică",
+    "focusAreas": "Rezidențial, spațiu public, design expozițional, cercetare materială"
+  },
+  "common": {
+    "placeholderFor": "Substituent pentru",
+    "copyright": "© 2026"
+  }
+}
