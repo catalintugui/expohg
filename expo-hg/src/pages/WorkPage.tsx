@@ -4,6 +4,8 @@ import { useTranslation } from '../i18n/I18nContext'
 
 export function WorkPage() {
   const { t } = useTranslation()
+  const periodA = t.projects.filter((project) => project.period === 'a')
+  const periodB = t.projects.filter((project) => project.period === 'b')
 
   return (
     <>
@@ -26,10 +28,20 @@ export function WorkPage() {
       <section className="works page-section">
         <div className="container">
           <div className="section-head">
-            <h2>{t.workPage.projects}</h2>
-            <span className="label">{t.workPage.subtitle}</span>
+            <h2>{t.workPage.periodA}</h2>
+            <span className="label">{t.workPage.periodASubtitle}</span>
           </div>
-          <ProjectGrid />
+          <ProjectGrid projects={periodA} />
+        </div>
+      </section>
+
+      <section className="works page-section">
+        <div className="container">
+          <div className="section-head">
+            <h2>{t.workPage.periodB}</h2>
+            <span className="label">{t.workPage.periodBSubtitle}</span>
+          </div>
+          <ProjectGrid projects={periodB} />
         </div>
       </section>
     </>

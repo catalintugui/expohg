@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elena Voss — Arhitectură",
-    "description": "Elena Voss — arhitectură și practică spațială"
+    "title": "Arhiva Haralamb Georgescu",
+    "description": "Arhiva Haralamb Georgescu // lucrări şi detalii"
   },
   "nav": {
     "homepage": "Acasă",
@@ -16,12 +16,12 @@
     "ro": "RO"
   },
   "architect": {
-    "name": "Elena Voss",
-    "tagline": "Arhitectură & practică spațială",
+    "name": "Haralamb Georgescu",
+    "tagline": "lucrări şi detalii",
     "role": "Arhitect",
-    "location": "Berlin",
-    "year": "Înființat 2018",
-    "email": "studio@elenavoss.de",
+    "location": "Bucureşti",
+    "year": "Est. 2026",
+    "email": "mail@example.com",
     "bio": [
       "Practica mea se concentrează pe raportul dintre formă și vid, explorând cum structura minimală poate genera o intensitate spațială discretă. Fiecare proiect este un studiu al proporției, materialului și luminii.",
       "Lucrările variază de la instalații expoziționale la intervenții urbane, menținând o abordare consistentă: claritate geometrică, detaliu precis, reflecție asupra utilizării.",
@@ -47,7 +47,16 @@
       "title": "Studiu monolit I",
       "year": "2024",
       "type": "Instalație",
-      "desc": "Un studiu al masivității și al luminii filtrate prin deschideri precise, explorând monumentalitatea la scară redusă."
+      "desc": "Un studiu al masivității și al luminii filtrate prin deschideri precise, explorând monumentalitatea la scară redusă.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "b"
     },
     {
       "slug": "negative-volume",
@@ -55,7 +64,16 @@
       "title": "Volum negativ",
       "year": "2023",
       "type": "Pavilion",
-      "desc": "Un pavilion temporar definit de absență — spațiul locuibil este sculptat din gol, nu din masă."
+      "desc": "Un pavilion temporar definit de absență — spațiul locuibil este sculptat din gol, nu din masă.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "b"
     },
     {
       "slug": "axis-ornament",
@@ -63,7 +81,16 @@
       "title": "Axă & ornament",
       "year": "2023",
       "type": "Rezidențial",
-      "desc": "O locuință în care axa structurală devine singurul ornament permis, refuzând orice adaos decorativ."
+      "desc": "O locuință în care axa structurală devine singurul ornament permis, refuzând orice adaos decorativ.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "b"
     },
     {
       "slug": "concrete-cantata",
@@ -71,7 +98,16 @@
       "title": "Cantată în beton",
       "year": "2022",
       "type": "Spațiu public",
-      "desc": "O intervenție urbană din beton armat brut, compusă ca o secvență ritmică de platforme și praguri."
+      "desc": "O intervenție urbană din beton armat brut, compusă ca o secvență ritmică de platforme și praguri.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "a"
     },
     {
       "slug": "light-chamber",
@@ -79,7 +115,16 @@
       "title": "Camera luminii",
       "year": "2022",
       "type": "Galerie",
-      "desc": "O galerie fără ferestre convenționale — lumina naturală este modulată prin fante verticale și suprafețe reflectante."
+      "desc": "O galerie fără ferestre convenționale — lumina naturală este modulată prin fante verticale și suprafețe reflectante.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "a"
     },
     {
       "slug": "plan-as-poem",
@@ -87,7 +132,16 @@
       "title": "Plan ca poem",
       "year": "2021",
       "type": "Cercetare",
-      "desc": "Cercetare despre planul arhitectural ca formă narativă, unde circulația devine vers și camera — strofă."
+      "desc": "Cercetare despre planul arhitectural ca formă narativă, unde circulația devine vers și camera — strofă.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "hero": "",
+      "images": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "period": "a"
     }
   ],
   "home": {
@@ -131,7 +185,18 @@
     "period": "2018 — prezent",
     "lead": "Un catalog de lucrări construite și speculative care explorează proporția, materialul și pragul dintre închidere și vid.",
     "projects": "Proiecte",
-    "subtitle": "Arhitectură & instalație"
+    "subtitle": "Arhitectură & instalație",
+    "periodA": "Perioada A",
+    "periodASubtitle": "2021 — 2022",
+    "periodB": "Perioada B",
+    "periodBSubtitle": "2023 — prezent"
+  },
+  "projectPage": {
+    "readMore": "Citește mai mult",
+    "readLess": "Citește mai puțin",
+    "back": "← Înapoi la lucrări",
+    "prev": "Imaginea anterioară",
+    "next": "Imaginea următoare"
   },
   "aboutPage": {
     "heading": "Despre noi",

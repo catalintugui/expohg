@@ -591,9 +591,17 @@ button {
   padding-block: var(--space-lg);
 }
 
+.works + .works {
+  padding-top: 0;
+}
+
 @media (min-width: 40rem) {
   .works {
     padding-block: var(--space-xl);
+  }
+
+  .works + .works {
+    padding-top: 0;
   }
 }
 
@@ -640,6 +648,17 @@ button {
   background: var(--bg);
   display: flex;
   flex-direction: column;
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.work-card:hover {
+  color: inherit;
+  background: var(--bg-alt);
+}
+
+.work-card:hover h3 {
+  color: var(--ink);
 }
 
 .work-card__frame {
@@ -723,6 +742,198 @@ button {
   font-size: var(--size-sm);
   line-height: 1.5;
   color: var(--ink-muted);
+}
+
+/* Project detail */
+
+.project-hero {
+  padding-block: var(--space-lg) var(--space-md);
+}
+
+@media (min-width: 40rem) {
+  .project-hero {
+    padding-block: var(--space-xl) var(--space-lg);
+  }
+}
+
+.project-hero__grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media (min-width: 48rem) {
+  .project-hero__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+}
+
+.project-hero__media {
+  aspect-ratio: 4 / 3;
+  background: var(--bg-alt);
+  border: 1px solid var(--line-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-hero__media::before {
+  content: '';
+  position: absolute;
+  inset: var(--space-sm);
+  border: 1px solid var(--line-light);
+  pointer-events: none;
+}
+
+.project-hero__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.project-hero__meta {
+  font-size: var(--size-xs);
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+}
+
+.project-hero__body {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: var(--size-base);
+  line-height: 1.6;
+  color: var(--ink-muted);
+  max-width: 32rem;
+}
+
+.project-hero__body.is-expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.project-hero__more {
+  margin-top: var(--space-xs);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--line-light);
+  padding-bottom: 0.15rem;
+}
+
+.project-hero__more:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.project-gallery {
+  padding-block: var(--space-md) var(--space-lg);
+}
+
+@media (min-width: 40rem) {
+  .project-gallery {
+    padding-block: var(--space-lg) var(--space-xl);
+  }
+}
+
+.project-slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.project-slider__controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-xs);
+}
+
+.project-slider__btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-light);
+  color: var(--ink-muted);
+  font-size: var(--size-md);
+  line-height: 1;
+}
+
+.project-slider__btn:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.project-slider__track {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.project-slider__slide {
+  flex: 0 0 calc(100% - var(--space-md));
+  scroll-snap-align: start;
+}
+
+@media (min-width: 40rem) {
+  .project-slider__slide {
+    flex: 0 0 calc((100% - var(--space-sm)) / 2);
+  }
+}
+
+.project-slider__slide img,
+.project-slider__placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--bg-alt);
+  border: 1px solid var(--line-light);
+}
+
+.project-slider__placeholder {
+  position: relative;
+}
+
+.project-slider__placeholder::before {
+  content: '';
+  position: absolute;
+  inset: var(--space-sm);
+  border: 1px solid var(--line-light);
+}
+
+.project-back {
+  padding-bottom: var(--space-xl);
+}
+
+.project-back a {
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  border-bottom: 1px solid var(--line-light);
+  padding-bottom: 0.15rem;
+}
+
+.project-back a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
 }
 
 /* Teaser */
