@@ -20,10 +20,26 @@ export function ProjectGrid({ projects, limit }: ProjectGridProps) {
           className="work-card"
         >
           <div
-            className="work-card__frame"
+            className={
+              project.hero
+                ? 'work-card__frame work-card__frame--has-image'
+                : 'work-card__frame'
+            }
             role="img"
-            aria-label={`${t.common.placeholderFor} ${project.title}`}
-          />
+            aria-label={
+              project.hero
+                ? project.title
+                : `${t.common.placeholderFor} ${project.title}`
+            }
+          >
+            {project.hero ? (
+              <img
+                className="work-card__image"
+                src={project.hero}
+                alt={project.title}
+              />
+            ) : null}
+          </div>
           <div className="work-card__body">
             <span className="work-card__index">{project.index}</span>
             <h3>{project.title}</h3>

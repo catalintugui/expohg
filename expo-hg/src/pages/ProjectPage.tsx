@@ -15,9 +15,11 @@ export function ProjectPage() {
   }
 
   const images =
-    project.images.length > 0
-      ? project.images
-      : Array.from({ length: 4 }, () => '')
+    project.images.filter(Boolean).length > 0
+      ? project.images.filter(Boolean)
+      : project.hero
+        ? [project.hero]
+        : Array.from({ length: 4 }, () => '')
 
   return (
     <>

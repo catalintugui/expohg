@@ -669,6 +669,20 @@ button {
   overflow: hidden;
 }
 
+.work-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-card__frame--has-image::before,
+.work-card__frame--has-image::after {
+  display: none;
+}
+
 .work-card__frame::before {
   content: '';
   position: absolute;
