@@ -1,16 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from '../i18n/I18nContext'
 import { LanguageSelector } from './LanguageSelector'
+import { WorkNavDropdown } from './WorkNavDropdown'
 
 export function Header() {
   const { t } = useTranslation()
-
-  const nav = [
-    { to: '/', label: t.nav.homepage, end: true },
-    { to: '/exhibition', label: t.nav.exhibition },
-    { to: '/work', label: t.nav.work },
-    { to: '/about', label: t.nav.about },
-  ]
 
   return (
     <header className="header">
@@ -23,16 +17,26 @@ export function Header() {
           <LanguageSelector />
         </div>
         <nav className="nav" aria-label={t.nav.mainAria}>
-          {nav.map(({ to, label, end }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={end}
-              className={({ isActive }) => (isActive ? 'is-active' : undefined)}
-            >
-              {label}
-            </NavLink>
-          ))}
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+          >
+            {t.nav.homepage}
+          </NavLink>
+          <NavLink
+            to="/exhibition"
+            className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+          >
+            {t.nav.exhibition}
+          </NavLink>
+          <WorkNavDropdown />
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? 'is-active' : undefined)}
+          >
+            {t.nav.about}
+          </NavLink>
         </nav>
       </div>
     </header>

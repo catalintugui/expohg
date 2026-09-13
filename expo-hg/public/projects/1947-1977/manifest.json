@@ -1,217 +1,198 @@
 {
-  "p-h-residence": {
-    "hero": "/projects/1947-1977/p-h-residence-hero.jpg",
-    "images": [
-      "/projects/1947-1977/p-h-residence-01.jpg",
-      "/projects/1947-1977/p-h-residence-02.jpg",
-      "/projects/1947-1977/p-h-residence-03.jpg",
-      "/projects/1947-1977/p-h-residence-04.jpg",
-      "/projects/1947-1977/p-h-residence-05.jpg",
-      "/projects/1947-1977/p-h-residence-06.jpg",
-      "/projects/1947-1977/p-h-residence-07.jpg",
-      "/projects/1947-1977/p-h-residence-08.jpg",
-      "/projects/1947-1977/p-h-residence-09.jpg",
-      "/projects/1947-1977/p-h-residence-10.jpg",
-      "/projects/1947-1977/p-h-residence-11.jpg",
-      "/projects/1947-1977/p-h-residence-12.jpg",
-      "/projects/1947-1977/p-h-residence-13.jpg",
-      "/projects/1947-1977/p-h-residence-14.jpg",
-      "/projects/1947-1977/p-h-residence-15.jpg",
-      "/projects/1947-1977/p-h-residence-16.jpg",
-      "/projects/1947-1977/p-h-residence-17.jpg",
-      "/projects/1947-1977/p-h-residence-18.jpg",
-      "/projects/1947-1977/p-h-residence-19.jpg",
-      "/projects/1947-1977/p-h-residence-20.jpg",
-      "/projects/1947-1977/p-h-residence-21.jpg",
-      "/projects/1947-1977/p-h-residence-22.jpg",
-      "/projects/1947-1977/p-h-residence-23.jpg",
-      "/projects/1947-1977/p-h-residence-24.jpg",
-      "/projects/1947-1977/p-h-residence-25.jpg",
-      "/projects/1947-1977/p-h-residence-26.jpg"
-    ]
-  },
-  "residence-h-pelengian": {
-    "hero": "/projects/1947-1977/residence-h-pelengian-hero.jpg",
-    "images": [
-      "/projects/1947-1977/residence-h-pelengian-01.jpg",
-      "/projects/1947-1977/residence-h-pelengian-02.jpg",
-      "/projects/1947-1977/residence-h-pelengian-03.jpg",
-      "/projects/1947-1977/residence-h-pelengian-04.jpg",
-      "/projects/1947-1977/residence-h-pelengian-05.jpg",
-      "/projects/1947-1977/residence-h-pelengian-06.jpg",
-      "/projects/1947-1977/residence-h-pelengian-07.jpg",
-      "/projects/1947-1977/residence-h-pelengian-08.jpg",
-      "/projects/1947-1977/residence-h-pelengian-09.jpg",
-      "/projects/1947-1977/residence-h-pelengian-10.jpg",
-      "/projects/1947-1977/residence-h-pelengian-11.jpg",
-      "/projects/1947-1977/residence-h-pelengian-12.jpg",
-      "/projects/1947-1977/residence-h-pelengian-13.jpg",
-      "/projects/1947-1977/residence-h-pelengian-14.jpg",
-      "/projects/1947-1977/residence-h-pelengian-15.jpg"
-    ]
-  },
-  "guy-parker-residence": {
-    "hero": "/projects/1947-1977/guy-parker-residence-hero.jpg",
-    "images": [
-      "/projects/1947-1977/guy-parker-residence-01.jpg",
-      "/projects/1947-1977/guy-parker-residence-02.jpg",
-      "/projects/1947-1977/guy-parker-residence-03.jpg",
-      "/projects/1947-1977/guy-parker-residence-04.jpg",
-      "/projects/1947-1977/guy-parker-residence-05.jpg",
-      "/projects/1947-1977/guy-parker-residence-06.jpg",
-      "/projects/1947-1977/guy-parker-residence-07.jpg",
-      "/projects/1947-1977/guy-parker-residence-08.jpg",
-      "/projects/1947-1977/guy-parker-residence-09.jpg",
-      "/projects/1947-1977/guy-parker-residence-10.jpg",
-      "/projects/1947-1977/guy-parker-residence-11.jpg",
-      "/projects/1947-1977/guy-parker-residence-12.jpg"
-    ]
-  },
-  "m-g-residence": {
-    "hero": "/projects/1947-1977/m-g-residence-hero.jpg",
-    "images": [
-      "/projects/1947-1977/m-g-residence-01.jpg",
-      "/projects/1947-1977/m-g-residence-02.jpg",
-      "/projects/1947-1977/m-g-residence-03.jpg",
-      "/projects/1947-1977/m-g-residence-04.jpg",
-      "/projects/1947-1977/m-g-residence-05.jpg",
-      "/projects/1947-1977/m-g-residence-06.jpg",
-      "/projects/1947-1977/m-g-residence-07.jpg",
-      "/projects/1947-1977/m-g-residence-08.jpg",
-      "/projects/1947-1977/m-g-residence-09.jpg",
-      "/projects/1947-1977/m-g-residence-10.jpg",
-      "/projects/1947-1977/m-g-residence-11.jpg",
-      "/projects/1947-1977/m-g-residence-12.jpg",
-      "/projects/1947-1977/m-g-residence-13.jpg",
-      "/projects/1947-1977/m-g-residence-14.jpg",
-      "/projects/1947-1977/m-g-residence-15.jpg",
-      "/projects/1947-1977/m-g-residence-16.jpg",
-      "/projects/1947-1977/m-g-residence-17.jpg",
-      "/projects/1947-1977/m-g-residence-18.jpg",
-      "/projects/1947-1977/m-g-residence-19.jpg",
-      "/projects/1947-1977/m-g-residence-20.jpg",
-      "/projects/1947-1977/m-g-residence-21.jpg",
-      "/projects/1947-1977/m-g-residence-22.jpg",
-      "/projects/1947-1977/m-g-residence-23.jpg",
-      "/projects/1947-1977/m-g-residence-24.jpg",
-      "/projects/1947-1977/m-g-residence-25.jpg",
-      "/projects/1947-1977/m-g-residence-26.jpg",
-      "/projects/1947-1977/m-g-residence-27.jpg",
-      "/projects/1947-1977/m-g-residence-28.jpg",
-      "/projects/1947-1977/m-g-residence-29.jpg"
-    ]
-  },
-  "residence-marchante-esq": {
-    "hero": "/projects/1947-1977/residence-marchante-esq-hero.jpg",
-    "images": [
-      "/projects/1947-1977/residence-marchante-esq-01.jpg",
-      "/projects/1947-1977/residence-marchante-esq-02.jpg",
-      "/projects/1947-1977/residence-marchante-esq-03.jpg",
-      "/projects/1947-1977/residence-marchante-esq-04.jpg",
-      "/projects/1947-1977/residence-marchante-esq-05.jpg",
-      "/projects/1947-1977/residence-marchante-esq-06.jpg",
-      "/projects/1947-1977/residence-marchante-esq-07.jpg",
-      "/projects/1947-1977/residence-marchante-esq-08.jpg",
-      "/projects/1947-1977/residence-marchante-esq-09.jpg",
-      "/projects/1947-1977/residence-marchante-esq-10.jpg",
-      "/projects/1947-1977/residence-marchante-esq-11.jpg",
-      "/projects/1947-1977/residence-marchante-esq-12.jpg",
-      "/projects/1947-1977/residence-marchante-esq-13.jpg",
-      "/projects/1947-1977/residence-marchante-esq-14.jpg",
-      "/projects/1947-1977/residence-marchante-esq-15.jpg",
-      "/projects/1947-1977/residence-marchante-esq-16.jpg",
-      "/projects/1947-1977/residence-marchante-esq-17.jpg",
-      "/projects/1947-1977/residence-marchante-esq-18.jpg",
-      "/projects/1947-1977/residence-marchante-esq-19.jpg"
-    ]
-  },
-  "pasinetti-house": {
-    "hero": "/projects/1947-1977/pasinetti-house-hero.jpg",
-    "images": [
-      "/projects/1947-1977/pasinetti-house-01.jpg",
-      "/projects/1947-1977/pasinetti-house-02.jpg",
-      "/projects/1947-1977/pasinetti-house-03.jpg",
-      "/projects/1947-1977/pasinetti-house-04.jpg",
-      "/projects/1947-1977/pasinetti-house-05.jpg",
-      "/projects/1947-1977/pasinetti-house-06.jpg",
-      "/projects/1947-1977/pasinetti-house-07.jpg",
-      "/projects/1947-1977/pasinetti-house-08.jpg",
-      "/projects/1947-1977/pasinetti-house-09.jpg"
-    ]
-  },
-  "neidentificate": {
-    "hero": "/projects/1947-1977/neidentificate-hero.jpg",
-    "images": [
-      "/projects/1947-1977/neidentificate-01.jpg",
-      "/projects/1947-1977/neidentificate-02.jpg",
-      "/projects/1947-1977/neidentificate-03.jpg",
-      "/projects/1947-1977/neidentificate-04.jpg",
-      "/projects/1947-1977/neidentificate-05.jpg",
-      "/projects/1947-1977/neidentificate-06.jpg",
-      "/projects/1947-1977/neidentificate-07.jpg"
-    ]
-  },
-  "hg-residence": {
-    "hero": "/projects/1947-1977/hg-residence-hero.jpg",
-    "images": [
-      "/projects/1947-1977/hg-residence-01.jpg",
-      "/projects/1947-1977/hg-residence-02.jpg",
-      "/projects/1947-1977/hg-residence-03.jpg",
-      "/projects/1947-1977/hg-residence-04.jpg",
-      "/projects/1947-1977/hg-residence-05.jpg",
-      "/projects/1947-1977/hg-residence-06.jpg",
-      "/projects/1947-1977/hg-residence-07.jpg",
-      "/projects/1947-1977/hg-residence-08.jpg",
-      "/projects/1947-1977/hg-residence-09.jpg",
-      "/projects/1947-1977/hg-residence-10.jpg",
-      "/projects/1947-1977/hg-residence-11.jpg",
-      "/projects/1947-1977/hg-residence-12.jpg",
-      "/projects/1947-1977/hg-residence-13.jpg",
-      "/projects/1947-1977/hg-residence-14.jpg"
-    ]
-  },
-  "neidentificat": {
-    "hero": "/projects/1947-1977/neidentificat-hero.jpg",
-    "images": [
-      "/projects/1947-1977/neidentificat-01.jpg",
-      "/projects/1947-1977/neidentificat-02.jpg"
-    ]
-  },
-  "beach-house": {
-    "hero": "/projects/1947-1977/beach-house-hero.jpg",
-    "images": [
-      "/projects/1947-1977/beach-house-01.jpg",
-      "/projects/1947-1977/beach-house-02.jpg",
-      "/projects/1947-1977/beach-house-03.jpg",
-      "/projects/1947-1977/beach-house-04.jpg",
-      "/projects/1947-1977/beach-house-05.jpg",
-      "/projects/1947-1977/beach-house-06.jpg",
-      "/projects/1947-1977/beach-house-07.jpg",
-      "/projects/1947-1977/beach-house-08.jpg",
-      "/projects/1947-1977/beach-house-09.jpg",
-      "/projects/1947-1977/beach-house-10.jpg",
-      "/projects/1947-1977/beach-house-11.jpg",
-      "/projects/1947-1977/beach-house-12.jpg",
-      "/projects/1947-1977/beach-house-13.jpg",
-      "/projects/1947-1977/beach-house-14.jpg",
-      "/projects/1947-1977/beach-house-15.jpg",
-      "/projects/1947-1977/beach-house-16.jpg",
-      "/projects/1947-1977/beach-house-17.jpg"
-    ]
-  },
-  "residence-for-pauker": {
-    "hero": "/projects/1947-1977/residence-for-pauker-hero.jpg",
-    "images": [
-      "/projects/1947-1977/residence-for-pauker-01.jpg",
-      "/projects/1947-1977/residence-for-pauker-02.jpg",
-      "/projects/1947-1977/residence-for-pauker-03.jpg",
-      "/projects/1947-1977/residence-for-pauker-04.jpg",
-      "/projects/1947-1977/residence-for-pauker-05.jpg",
-      "/projects/1947-1977/residence-for-pauker-06.jpg",
-      "/projects/1947-1977/residence-for-pauker-07.jpg",
-      "/projects/1947-1977/residence-for-pauker-08.jpg",
-      "/projects/1947-1977/residence-for-pauker-09.jpg",
-      "/projects/1947-1977/residence-for-pauker-10.jpg"
-    ]
-  }
+  "converted": 582,
+  "errors": [],
+  "projects": [
+    {
+      "slug": "p-h-residence",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/p-h-residence-hero.jpg",
+      "images": 33
+    },
+    {
+      "slug": "residence-h-pelengian",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/residence-h-pelengian-hero.jpg",
+      "images": 14
+    },
+    {
+      "slug": "guy-pauker-residence",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/guy-pauker-residence-hero.jpg",
+      "images": 31
+    },
+    {
+      "slug": "m-g-residence",
+      "section": "single-family",
+      "hero": "",
+      "images": 31
+    },
+    {
+      "slug": "residence-marchante-esq",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/residence-marchante-esq-hero.jpg",
+      "images": 17
+    },
+    {
+      "slug": "pasinetti-house",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/pasinetti-house-hero.jpg",
+      "images": 23
+    },
+    {
+      "slug": "neidentificate",
+      "section": "single-family",
+      "hero": "",
+      "images": 7
+    },
+    {
+      "slug": "hg-residence",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/hg-residence-hero.jpg",
+      "images": 16
+    },
+    {
+      "slug": "beach-house",
+      "section": "single-family",
+      "hero": "/projects/1947-1977/beach-house-hero.jpg",
+      "images": 16
+    },
+    {
+      "slug": "24-unit-apartment-house",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/24-unit-apartment-house-hero.jpg",
+      "images": 5
+    },
+    {
+      "slug": "apartment-complex",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/apartment-complex-hero.jpg",
+      "images": 7
+    },
+    {
+      "slug": "carmelina-homes",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/carmelina-homes-hero.jpg",
+      "images": 15
+    },
+    {
+      "slug": "hacienda-apartments",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/hacienda-apartments-hero.jpg",
+      "images": 5
+    },
+    {
+      "slug": "lark-apartments",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/lark-apartments-hero.jpg",
+      "images": 4
+    },
+    {
+      "slug": "six-unit-apartments",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/six-unit-apartments-hero.jpg",
+      "images": 13
+    },
+    {
+      "slug": "30-units-for-nabel",
+      "section": "semi-collective",
+      "hero": "/projects/1947-1977/30-units-for-nabel-hero.jpg",
+      "images": 9
+    },
+    {
+      "slug": "neidentif",
+      "section": "semi-collective",
+      "hero": "",
+      "images": 4
+    },
+    {
+      "slug": "30-units-app-calif",
+      "section": "collective",
+      "hero": "/projects/1947-1977/30-units-app-calif-hero.jpg",
+      "images": 28
+    },
+    {
+      "slug": "24-unit-apartment-house-collective",
+      "section": "collective",
+      "hero": "",
+      "images": 9
+    },
+    {
+      "slug": "60-units-apartment-house",
+      "section": "collective",
+      "hero": "/projects/1947-1977/60-units-apartment-house-hero.jpg",
+      "images": 53
+    },
+    {
+      "slug": "langdon-apartments",
+      "section": "collective",
+      "hero": "",
+      "images": 9
+    },
+    {
+      "slug": "six-units-apartment",
+      "section": "collective",
+      "hero": "/projects/1947-1977/six-units-apartment-hero.jpg",
+      "images": 14
+    },
+    {
+      "slug": "high-rise",
+      "section": "collective",
+      "hero": "",
+      "images": 137
+    },
+    {
+      "slug": "castellammare-apartments",
+      "section": "collective",
+      "hero": "/projects/1947-1977/castellammare-apartments-hero.jpg",
+      "images": 7
+    },
+    {
+      "slug": "fullerton-apartments",
+      "section": "collective",
+      "hero": "/projects/1947-1977/fullerton-apartments-hero.jpg",
+      "images": 6
+    },
+    {
+      "slug": "joe-nabel",
+      "section": "collective",
+      "hero": "/projects/1947-1977/joe-nabel-hero.jpg",
+      "images": 4
+    },
+    {
+      "slug": "kleber-apartments",
+      "section": "collective",
+      "hero": "/projects/1947-1977/kleber-apartments-hero.jpg",
+      "images": 9
+    },
+    {
+      "slug": "locuinte-colective-insiruite-nabel",
+      "section": "collective",
+      "hero": "/projects/1947-1977/locuinte-colective-insiruite-nabel-hero.jpg",
+      "images": 5
+    },
+    {
+      "slug": "roscoe-apartments",
+      "section": "collective",
+      "hero": "/projects/1947-1977/roscoe-apartments-hero.jpg",
+      "images": 3
+    },
+    {
+      "slug": "imobil-apartamente-tip-duplex",
+      "section": "collective",
+      "hero": "/projects/1947-1977/imobil-apartamente-tip-duplex-hero.jpg",
+      "images": 5
+    },
+    {
+      "slug": "levering-properties",
+      "section": "collective",
+      "hero": "/projects/1947-1977/levering-properties-hero.jpg",
+      "images": 15
+    },
+    {
+      "slug": "neidentificat",
+      "section": "collective",
+      "hero": "/projects/1947-1977/neidentificat-hero.jpg",
+      "images": 2
+    }
+  ]
 }

@@ -1,18 +1,28 @@
 import { useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { ProjectSlider } from '../components/ProjectSlider'
 import { useTranslation } from '../i18n/I18nContext'
+import { projectPathForProject, workPathForProject } from '../lib/workPaths'
 
 export function ProjectPage() {
   const { slug } = useParams<{ slug: string }>()
+  const location = useLocation()
   const { t } = useTranslation()
   const [expanded, setExpanded] = useState(false)
 
   const project = t.projects.find((item) => item.slug === slug)
 
   if (!project) {
-    return <Navigate to="/work" replace />
+    return <Navigate to="/work/romania/housing" replace />
   }
+
+  const canonicalPath = projectPathForProject(project)
+
+  if (location.pathname !== canonicalPath) {
+    return <Navigate to={canonicalPath} replace />
+  }
+
+  const workPath = workPathForProject(project)
 
   const images =
     project.images.filter(Boolean).length > 0
@@ -69,12 +79,13 @@ export function ProjectPage() {
             placeholderLabel={t.common.placeholderFor}
             prevLabel={t.projectPage.prev}
             nextLabel={t.projectPage.next}
+            closeLabel={t.projectPage.close}
           />
         </div>
       </section>
 
       <div className="container project-back">
-        <Link to="/work">{t.projectPage.back}</Link>
+        <Link to={workPath}>{t.projectPage.back}</Link>
       </div>
     </>
   )

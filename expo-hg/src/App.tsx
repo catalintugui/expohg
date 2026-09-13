@@ -1,8 +1,9 @@
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { AboutPage } from './pages/AboutPage'
 import { ExhibitionPage } from './pages/ExhibitionPage'
 import { HomePage } from './pages/HomePage'
+import { LegacyProjectRedirect } from './pages/LegacyProjectRedirect'
 import { ProjectPage } from './pages/ProjectPage'
 import { WorkPage } from './pages/WorkPage'
 
@@ -12,8 +13,14 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="exhibition" element={<ExhibitionPage />} />
-        <Route path="work" element={<WorkPage />} />
-        <Route path="work/:slug" element={<ProjectPage />} />
+        <Route path="work/romania/:category/:slug" element={<ProjectPage />} />
+        <Route path="work/usa/:category/:slug" element={<ProjectPage />} />
+        <Route path="work/romania/:category" element={<WorkPage period="a" />} />
+        <Route path="work/usa/:category" element={<WorkPage period="b" />} />
+        <Route path="work/romania" element={<Navigate to="/work/romania/housing" replace />} />
+        <Route path="work/usa" element={<Navigate to="/work/usa/housing" replace />} />
+        <Route path="work/:slug" element={<LegacyProjectRedirect />} />
+        <Route path="work" element={<Navigate to="/work/romania/housing" replace />} />
         <Route path="about" element={<AboutPage />} />
       </Route>
     </Routes>

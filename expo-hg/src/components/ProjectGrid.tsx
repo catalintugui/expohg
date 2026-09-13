@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useTranslation } from '../i18n/I18nContext'
 import type { Project } from '../i18n/types'
+import { projectPathForProject } from '../lib/workPaths'
 
 type ProjectGridProps = {
   projects?: Project[]
@@ -16,7 +17,7 @@ export function ProjectGrid({ projects, limit }: ProjectGridProps) {
       {items.map((project) => (
         <Link
           key={project.slug}
-          to={`/work/${project.slug}`}
+          to={projectPathForProject(project)}
           className="work-card"
         >
           <div
@@ -43,10 +44,6 @@ export function ProjectGrid({ projects, limit }: ProjectGridProps) {
           <div className="work-card__body">
             <span className="work-card__index">{project.index}</span>
             <h3>{project.title}</h3>
-            <p className="work-card__meta">
-              {project.type} · {project.year}
-            </p>
-            <p className="work-card__desc">{project.desc}</p>
           </div>
         </Link>
       ))}
