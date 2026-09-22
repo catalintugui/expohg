@@ -9,11 +9,30 @@ import {
 } from '../lib/workCategories'
 import { workPath } from '../lib/workPaths'
 
+const DESKTOP_MQ = '(min-width: 48rem)'
+
+function useIsDesktopNav() {
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia(DESKTOP_MQ).matches : false,
+  )
+
+  useEffect(() => {
+    const mq = window.matchMedia(DESKTOP_MQ)
+    const onChange = () => setIsDesktop(mq.matches)
+    onChange()
+    mq.addEventListener('change', onChange)
+    return () => mq.removeEventListener('change', onChange)
+  }, [])
+
+  return isDesktop
+}
+
 export function WorkNavDropdown() {
   const { t } = useTranslation()
   const location = useLocation()
   const menuId = useId()
   const rootRef = useRef<HTMLDivElement>(null)
+  const isDesktop = useIsDesktopNav()
   const [menuOpen, setMenuOpen] = useState(false)
   const [openPeriod, setOpenPeriod] = useState<WorkPeriodSlug | null>(null)
   const isActive = location.pathname.startsWith('/work')
@@ -48,14 +67,20 @@ export function WorkNavDropdown() {
     }
   }, [menuOpen])
 
+  function closeAll() {
+    setMenuOpen(false)
+    setOpenPeriod(null)
+  }
+
   return (
     <div
       ref={rootRef}
       className={menuOpen ? 'nav-dropdown is-open' : 'nav-dropdown'}
-      onMouseEnter={() => setMenuOpen(true)}
+      onMouseEnter={() => {
+        if (isDesktop) setMenuOpen(true)
+      }}
       onMouseLeave={() => {
-        setMenuOpen(false)
-        setOpenPeriod(null)
+        if (isDesktop) closeAll()
       }}
     >
       <button
@@ -78,6 +103,7 @@ export function WorkNavDropdown() {
       <ul id={menuId} className="nav-dropdown__menu" role="menu" hidden={!menuOpen}>
         {WORK_PERIODS.map(({ slug, labelKey }) => {
           const periodOpen = openPeriod === slug
+          const submenuId = `${menuId}-${slug}`
 
           return (
             <li
@@ -88,7 +114,9 @@ export function WorkNavDropdown() {
                   : 'nav-dropdown__item nav-dropdown__item--has-submenu'
               }
               role="none"
-              onMouseEnter={() => setOpenPeriod(slug)}
+              onMouseEnter={() => {
+                if (isDesktop) setOpenPeriod(slug)
+              }}
             >
               <button
                 type="button"
@@ -96,15 +124,17 @@ export function WorkNavDropdown() {
                 role="menuitem"
                 aria-haspopup="menu"
                 aria-expanded={periodOpen}
+                aria-controls={submenuId}
                 onClick={() =>
                   setOpenPeriod((current) => (current === slug ? null : slug))
                 }
               >
                 {t.nav[labelKey]}
-                <span className="nav-dropdown__arrow nav-dropdown__arrow--right" aria-hidden="true" />
+                <span className="nav-dropdown__arrow" aria-hidden="true" />
               </button>
 
               <ul
+                id={submenuId}
                 className="nav-dropdown__submenu"
                 role="menu"
                 hidden={!periodOpen}
@@ -117,10 +147,7 @@ export function WorkNavDropdown() {
                       className={({ isActive: isLinkActive }) =>
                         isLinkActive ? 'is-active' : undefined
                       }
-                      onClick={() => {
-                        setMenuOpen(false)
-                        setOpenPeriod(null)
-                      }}
+                      onClick={closeAll}
                     >
                       {t.workCategories[WORK_CATEGORY_LABEL_KEYS[categorySlug]]}
                     </NavLink>

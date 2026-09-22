@@ -1206,7 +1206,9 @@
   },
   "common": {
     "placeholderFor": "Placeholder for",
-    "copyright": "© 2026"
+    "copyright": "© 2026",
+    "footerMeta": "{year} // Bucharest // Romania",
+    "footerFollow": "Haralamb Georgescu Archive"
   },
   "housingSections": {
     "singleFamily": "Single-family houses",
