@@ -8,27 +8,19 @@ import {
   WORK_CATEGORY_LABEL_KEYS,
   type WorkCategorySlug,
 } from '../lib/workCategories'
+import {
+  isWorkSectionKey,
+  WORK_SECTION_LABEL_KEYS,
+  WORK_SECTIONS_BY_CATEGORY,
+} from '../lib/workSections'
 
 type WorkPageProps = {
   period: Project['period']
 }
 
-const HOUSING_SECTION_ORDER = [
-  'single-family',
-  'semi-collective',
-  'collective',
-] as const
-
-const HOUSING_SECTION_LABEL_KEYS = {
-  'single-family': 'singleFamily',
-  'semi-collective': 'semiCollective',
-  collective: 'collective',
-} as const
-
-type HousingSectionKey = (typeof HOUSING_SECTION_ORDER)[number]
-
-function isHousingSection(value: string): value is HousingSectionKey {
-  return HOUSING_SECTION_ORDER.includes(value as HousingSectionKey)
+function projectSection(project: Project): string | null {
+  if (!('section' in project) || typeof project.section !== 'string') return null
+  return project.section
 }
 
 export function WorkPage({ period }: WorkPageProps) {
@@ -52,30 +44,30 @@ export function WorkPage({ period }: WorkPageProps) {
     ? t.workCategories[WORK_CATEGORY_LABEL_KEYS[category]]
     : null
 
+  const sectionOrder = category ? WORK_SECTIONS_BY_CATEGORY[category] : []
+
   const groupedSections =
-    category === 'housing'
-      ? HOUSING_SECTION_ORDER.map((key) => ({
-          key,
-          title: t.housingSections[HOUSING_SECTION_LABEL_KEYS[key]],
-          projects: projects.filter(
-            (project) =>
-              'section' in project &&
-              typeof project.section === 'string' &&
-              isHousingSection(project.section) &&
-              project.section === key,
-          ),
-        })).filter((group) => group.projects.length > 0)
+    category && sectionOrder.length > 0
+      ? sectionOrder
+          .map((key) => ({
+            key,
+            title: t.workSections[WORK_SECTION_LABEL_KEYS[key]],
+            projects: projects.filter((project) => projectSection(project) === key),
+          }))
+          .filter((group) => group.projects.length > 0)
       : []
 
-  const unsectioned =
-    category === 'housing'
-      ? projects.filter(
-          (project) =>
-            !('section' in project) ||
-            typeof project.section !== 'string' ||
-            !isHousingSection(project.section),
-        )
-      : projects
+  const knownSections = new Set(sectionOrder)
+  const unsectioned = projects.filter((project) => {
+    const key = projectSection(project)
+    if (!key) return true
+    if (!isWorkSectionKey(key)) return true
+    return !knownSections.has(key)
+  })
+
+  const metaLabel = categoryLabel
+    ? `${section.subtitle} · ${categoryLabel}`
+    : section.subtitle
 
   return (
     <>
@@ -88,10 +80,7 @@ export function WorkPage({ period }: WorkPageProps) {
               <span>
                 {projects.length} {t.workPage.projectsCount}
               </span>
-              <span>
-                {section.subtitle}
-                {categoryLabel ? ` · ${categoryLabel}` : ''}
-              </span>
+              <span>{metaLabel}</span>
             </div>
           </div>
           <p className="hero__lead">{t.workPage.lead}</p>
@@ -99,47 +88,41 @@ export function WorkPage({ period }: WorkPageProps) {
       </section>
 
       {groupedSections.length > 0 ? (
-        groupedSections.map((group) => (
-          <section key={group.key} className="works page-section">
-            <div className="container">
-              <div className="section-head">
-                <h2>{group.title}</h2>
-                <span className="label">
-                  {section.subtitle}
-                  {categoryLabel ? ` · ${categoryLabel}` : ''}
-                </span>
+        <>
+          {groupedSections.map((group) => (
+            <section key={group.key} className="works page-section">
+              <div className="container">
+                <div className="section-head">
+                  <h2>{group.title}</h2>
+                  <span className="label">{metaLabel}</span>
+                </div>
+                <ProjectGrid projects={group.projects} />
               </div>
-              <ProjectGrid projects={group.projects} />
-            </div>
-          </section>
-        ))
+            </section>
+          ))}
+          {unsectioned.length > 0 ? (
+            <section className="works page-section">
+              <div className="container">
+                <div className="section-head">
+                  <h2>{categoryLabel ?? section.title}</h2>
+                  <span className="label">{metaLabel}</span>
+                </div>
+                <ProjectGrid projects={unsectioned} />
+              </div>
+            </section>
+          ) : null}
+        </>
       ) : (
         <section className="works page-section">
           <div className="container">
             <div className="section-head">
               <h2>{categoryLabel ?? section.title}</h2>
-              <span className="label">
-                {categoryLabel ? `${section.subtitle} · ${categoryLabel}` : section.subtitle}
-              </span>
+              <span className="label">{metaLabel}</span>
             </div>
-            <ProjectGrid projects={unsectioned} />
+            <ProjectGrid projects={projects} />
           </div>
         </section>
       )}
-
-      {groupedSections.length > 0 && unsectioned.length > 0 ? (
-        <section className="works page-section">
-          <div className="container">
-            <div className="section-head">
-              <h2>{categoryLabel ?? section.title}</h2>
-              <span className="label">
-                {categoryLabel ? `${section.subtitle} · ${categoryLabel}` : section.subtitle}
-              </span>
-            </div>
-            <ProjectGrid projects={unsectioned} />
-          </div>
-        </section>
-      ) : null}
     </>
   )
 }
